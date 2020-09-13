@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+
+  /* Quick Reset */
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+body {
+  padding: 10px;
+}
+
+header {
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+}
+
+h1,
+h2,
+h3 {
+  padding-top: 10px;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 5px 5px 10px 5px;
+}
+
+p {
+  padding: 5px;
+}
+
+.bio-img,
+.art-img {
+  padding: 5px;
+  width: 90vw;
+}
+
+.card {
+  margin: 25px;
+  padding: 10px;
+
+  -webkit-box-shadow: 0px 0px 10px -3px rgba(5, 30, 255, 1);
+  -moz-box-shadow: 0px 0px 10px -3px rgba(5, 30, 255, 1);
+  box-shadow: 0px 0px 10px -3px rgba(5, 30, 255, 1);
+}
+
+.card-img {
+  width: 100%;
+}
+
+.art-heading {
+  font-variant: small-caps;
+  text-shadow: 1px 1px #0045ac;
+  letter-spacing: 2px;
+}
+
+.soon {
+  background-color: rgb(180, 180, 180);
+}
+
+.soon time {
+  font-size: 1.1em;
+  color: maroon;
+}
+
+.subscribe {
+  font-style: italic;
+}
+
+.subscribe-btn {
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.subscribe-btn:hover {
+  font-size: 1.01em;
+  text-decoration: underline;
+}
+
+.socials {
+  padding: 5px;
+}
+
+.social {
+  margin: 2px;
+  width: 1.75em;
+}
+
+blockquote {
+  margin: 5px;
+  padding: 5px;
+  background-color: rgb(247, 212, 212);
+}
+
+#about {
+  padding-bottom: 5px;
+  border-bottom: 1px solid grey;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover li,
+a:hover {
+  font-size: 1.1em;
+  text-decoration: underline;
+}
+
+a:active li,
+a:active {
+  color: rgb(189, 108, 76);
+}
+
+a.current li,
+a.current {
+  color: black;
+}
