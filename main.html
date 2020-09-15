@@ -7,96 +7,112 @@
 
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
-    <header>
-      <h1 class="main-heading headings">Blog Central</h1>
+  <body id="top">
+    <header id="main-header">
+      <h1>Blog Central</h1>
       <p>Blogs presented in style</p>
-      <nav>
-        <ul class="nav-container">
-          <li class="nav-item">Home</li>
+      <nav class="main-nav">
+        <ul class="nav-container flex">
+          <li class="nav-item current">Home</li>
         </ul>
       </nav>
     </header>
     <main>
-      <article class="card">
-        <img
-          class="card-img"
-          src="./images/programming-code.jpg"
-          alt="Screenshot of programming code on laptop"
-        />
-        <h1 class="card-heading art-heading">Article Title</h1>
-        <p class="category">Programming</p>
-        <time datetime="2020-08-30">August 30, 2020</time>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-          ipsum perferendis voluptatum omnis ut dolores molestiae similique
-          nulla laborum nam.
-        </p>
-        <a href="./blog.html">Continue Reading...</a>
-      </article>
-
-      <article class="card soon">
-        <img
-          class="card-img"
-          src="./images/coin-overflow.jpg"
-          alt="Jar tipped over with coins overflowing"
-        />
-        <h1 class="card-heading art-heading">Article Title</h1>
-        <p class="category">Finance</p>
-        <time>Coming Soon</time>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
-          dignissimos dolores, dolor optio explicabo debitis placeat nihil eaque
-          delectus sit? Fuga est assumenda accusantium eos!
-        </p>
-      </article>
-
-      <article class="card soon">
-        <img
-          class="card-img"
-          src="./images/office-with-view.jpg"
-          alt="Business office with a view"
-        />
-        <h1 class="card-heading art-heading">Article Title</h1>
-        <p class="category">Startups</p>
-        <time>Coming Soon</time>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
-          deleniti eos libero quaerat labore error ratione rem earum!
-        </p>
-      </article>
+      <div class="card flex">
+        <article class="card-article">
+          <img
+            class="card-img"
+            src="./images/programming-code.jpg"
+            alt="Screenshot of programming code on laptop"
+          />
+          <div class="main-content">
+            <h1 class="card-heading">Article Title</h1>
+            <p class="category">Programming</p>
+            <time datetime="2020-08-30">August 30, 2020</time>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              ipsum perferendis voluptatum omnis ut dolores molestiae similique
+              nulla laborum nam.
+            </p>
+            <a class="nav-item" href="./blog.html">Continue Reading...</a>
+          </div>
+        </article>
+      </div>
+      <div class="card flex soon">
+        <article class="card-article">
+          <img
+            class="card-img"
+            src="./images/coin-overflow.jpg"
+            alt="Jar tipped over with coins overflowing"
+          />
+          <div class="main-content">
+            <h1 class="card-heading">Article Title</h1>
+            <p class="category">Finance</p>
+            <p class="coming-soon">Coming Soon</p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
+              dignissimos dolores, dolor optio explicabo debitis placeat nihil
+              eaque delectus sit? Fuga est assumenda accusantium eos!
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="card flex soon">
+        <article class="card-article">
+          <img
+            class="card-img"
+            src="./images/office-with-view.jpg"
+            alt="Business office with a view"
+          />
+          <div class="main-content">
+            <h1 class="card-heading">Article Title</h1>
+            <p class="category">Startups</p>
+            <p class="coming-soon">Coming Soon</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
+              deleniti eos libero quaerat labore error ratione rem earum!
+            </p>
+          </div>
+        </article>
+      </div>
     </main>
     <footer>
       <div class="subscription">
-        <p class="subscribe">
+        <p class="subscribe-txt">
           Get alerts on topics that interest you or follow us on social media
         </p>
         <button class="subscribe-btn">Subscribe</button>
       </div>
-      <div class="socials">
-        <a class="social twitter" href="https://twitter.com/" target="_blank"
-          ><img class="social twitter" src="./images/twitter.png" alt="twitter"
-        /></a>
-        <a
-          class="social facebook"
-          href="https://www.facebook.com/"
-          target="_blank"
-          ><img
-            class="social facebook"
-            src="./images/facebook.png"
-            alt="facebook"
-        /></a>
-        <a
-          class="social facebook"
-          href="https://www.linkedin.com/"
-          target="_blank"
-          ><img
-            class="social linkedin"
-            src="./images/linkedin.png"
-            alt="linkedin"
-        /></a>
+      <div class="socials flex">
+        <div class="social twitter">
+          <a class="link" href="https://twitter.com/" target="_blank"
+            ><img class="logo" src="./images/twitter.png" alt="twitter"
+          /></a>
+        </div>
+        <div class="social facebook">
+          <a class="link" href="https://www.facebook.com/" target="_blank"
+            ><img class="logo" src="./images/facebook.png" alt="facebook"
+          /></a>
+        </div>
+        <div class="social linkedin">
+          <a class="link" href="https://www.linkedin.com/" target="_blank"
+            ><img class="img" src="./images/linkedin.png" alt="linkedin"
+          /></a>
+        </div>
       </div>
-      <a href="#">Home</a>
+      <ul class="nav-container flex">
+        <li class="nav-item current">Home</li>
+        <li class="nav-item"><a href="#top">Back to Top</a></li>
+      </ul>
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img
+            style="border: 0; width: 88px; height: 31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!"
+          />
+        </a>
+      </p>
       <br />
       &copy;Copyright Binu David 2020
     </footer>
