@@ -28,6 +28,30 @@ footer {
   margin-top: 10px;
 }
 
+.validated {
+  border: 0;
+  width: 88px;
+  height: 31px;
+}
+
+.continue {
+  color: #0045ac;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.continue:hover {
+  cursor: pointer;
+}
+
+.continue:active {
+  border: 1px solid black;
+}
+
+figure {
+  margin-bottom: 10px;
+}
+
 /* Card */
 .card {
   padding: 10px;
